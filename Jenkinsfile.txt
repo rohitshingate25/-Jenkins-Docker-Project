@@ -32,7 +32,7 @@ pipeline {
                 sh 'docker image push vikashashoke/$JOB_NAME:latest'
                //A number of images will get stored into our jenkins server so need to remove prev build images
                 //local images,taged images & latest images all delete 
-              sh 'docker image rm $JOB_NAME:v1.$BUILD_ID vikashashoke/$JOB_NAME:v1.$BUILD_ID rohitshingate25/$JOB_NAME:latest'
+              sh 'docker image rm $JOB_NAME:v1.$BUILD_ID rohitshingate25/$JOB_NAME:v1.$BUILD_ID rohitshingate25/$JOB_NAME:latest'
               }
              }
          }
